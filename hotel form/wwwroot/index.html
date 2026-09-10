@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <title>Бронювання номера</title>
+</head>
+<body>
+
+    <h1>Бронювання номера в готелі</h1>
+    <form>
+        <fieldset>
+            <legend>Дані для бронювання</legend>
+            <p>
+                <label for="firstName">Ім’я:</label>
+                <input type="text"
+                       id="firstName"
+                       name="firstName"
+                       required>
+            </p>
+            <p>
+                <label for="lastName">Прізвище:</label>
+                <input type="text"
+                       id="lastName"
+                       name="lastName"
+                       required>
+            </p>
+            <p>
+                <label for="email">Електронна пошта:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+            </p>
+            <p>
+                <label for="phone">Номер телефону:</label>
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       required>
+            </p>
+            <p>
+                <label for="guests">Кількість гостей:</label>
+
+                <input type="number"
+                       id="guests"
+                       name="guests"
+                       min="1"
+                       max="6"
+                       required>
+            </p>
+            <p>
+                <label for="checkin">Дата заїзду:</label>
+
+                <input type="date"
+                       id="checkin"
+                       name="checkin"
+                       required>
+            </p>
+
+            <p>
+                <label for="checkout">Дата виїзду:</label>
+
+                <input type="date"
+                       id="checkout"
+                       name="checkout"
+                       required>
+            </p>
+            <p>
+                <label for="room">Тип номера:</label>
+
+                <select id="room" name="room" required>
+                    <option value="">Оберіть тип номера</option>
+                    <option value="single">Стандарт</option>
+                    <option value="double">Напівлюкс</option>
+                    <option value="luxury">Люкс</option>
+                </select>
+            </p>
+            <p>Додаткові послуги:</p>
+
+            <label>
+                <input type="checkbox"
+                       name="service"
+                       value="breakfast" />
+                       Сніданок
+            <label>
+            <br>
+
+            <label>
+                <input type="checkbox"
+                       name="service"
+                       value="parking" />
+                       Паркінг
+            <label>
+            <br>
+
+            <label>
+                <input type="checkbox"
+                       name="service"
+                       value="transfer" />
+                       Трансфер
+            </label>
+            <br>
+
+            <label>
+                <input type="checkbox"
+                       name="service"
+                       value="cleaning" />
+                       Додаткове прибирання
+            <label>
+                <p>
+                    <label for="city">Місто:</label>
+
+                    <select id="city" name="city">
+                        <option value="">Оберіть місто</option>
+                        <option value="kyiv">Київ</option>
+                        <option value="lviv">Львів</option>
+                        <option value="odesa">Одеса</option>
+                        <option value="uzhhorod">Ужгород</option>
+                        <option value="chernivtsi">Чернівці</option>
+                    </select>
+                </p>
+            <p>
+                <label for="wishes">Додаткові побажання</label>
+                <br>
+
+                <textarea id="wishes"
+                          name="wishes"
+                          rows="5"
+                          cols="50"
+                          maxlength="250"></textarea>
+            </p>
+        </fieldset>
+        <button type="submit">Забронювати номер</button>
+        <button type="reset">Очистити форму</button>
+    </form>
+</body>
+</html>
