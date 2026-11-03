@@ -1,0 +1,85 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: white;
+}
+
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #7d1111;
+}
+
+h1 {
+    margin: 0 0 15px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+figure {
+    width: 300px;
+    margin: 0;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+    figure:hover {
+        transform: scale(1.08) rotate(3deg);
+    }
+
+img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border: 4px solid #b88935;
+    border-radius: 8px;
+    animation: appear 1.5s ease;
+}
+
+figcaption {
+    margin-top: 10px;
+    color: #f0d28a;
+}
+
+.decorative-element {
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    border: 6px solid #b88935;
+    border-top-color: #7d1111;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
