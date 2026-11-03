@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Розклад занять</title>
+</head>
+<body>
+    <main>
+        <h1>Розклад занять</h1>
+
+        <table border="1">
+            <caption>Розклад занять на навчальний тиждень</caption>
+
+            <thead>
+                <tr>
+                    <th colspan="5">Інформація про заняття</th>
+                </tr>
+                <tr>
+                    <th scope="col">День тижня</th>
+                    <th scope="col">Номер пари</th>
+                    <th scope="col">Час</th>
+                    <th scope="col">Предмет</th>
+                    <th scope="col">Кабінет</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Понеділок</th>
+                    <td>1</td>
+                    <td>08:30–10:05</td>
+                    <td>HTML</td>
+                    <td>301</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>10:15–11:50</td>
+                    <td>CSS</td>
+                    <td>301</td>
+                </tr>
+
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Вівторок</th>
+                    <td>1</td>
+                    <td>08:30–10:05</td>
+                    <td>Програмування</td>
+                    <td>205</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>10:15–11:50</td>
+                    <td>Бази даних</td>
+                    <td>205</td>
+                </tr>
+
+                <tr>
+                    <th scope="row">Середа</th>
+                    <td>1</td>
+                    <td>08:30–10:05</td>
+                    <td>Вебдизайн</td>
+                    <td>110</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="4" scope="row">Всього занять</th>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
