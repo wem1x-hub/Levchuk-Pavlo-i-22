@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Курс HTML для початківців</title>
+</head>
+<body>
+    <header id="home">
+        <h1>Курс HTML для початківців</h1>
+
+        <nav aria-label="Навігація курсу">
+            <a href="#home">Головна сторінка</a>
+            <a href="#about">Про курс</a>
+            <a href="#registration">Реєстрація</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Про курс</h2>
+
+            <img src="students.jpg"
+                 alt="Студенти навчаються створювати вебсторінки">
+
+            <p>
+                На курсі ви навчитеся створювати вебсторінки.
+            </p>
+        </section>
+
+        <section id="registration">
+            <h2>Реєстрація</h2>
+
+            <form>
+                <p>
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </section>
+    </main>
+
+    <!--
+    Виправлені проблеми:
+    1. Додано lang="uk" для визначення мови документа.
+    2. Заголовок h2 замінено на головний заголовок h1.
+    3. Заголовки h4 замінено на логічні заголовки h2.
+    4. Навігацію оформлено за допомогою елемента nav.
+    5. Текст посилань зроблено зрозумілим.
+    6. Для зображення додано альтернативний текст alt.
+    7. Поля форми підписано елементами label.
+    8. Для Email використано input type="email".
+    9. Основний вміст розміщено всередині елемента main.
+    10. Кнопці форми додано type="submit".
+    -->
+
+</body>
+</html>
