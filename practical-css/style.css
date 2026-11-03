@@ -1,0 +1,89 @@
+﻿/* Загальні стилі сторінки */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+}
+
+/* Верхня частина сторінки */
+header {
+    padding: 25px;
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+}
+
+/* Головний заголовок */
+h1 {
+    margin: 0 0 20px;
+}
+
+/* Меню навігації */
+nav a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    /* Зміна вигляду посилання при наведенні */
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+/* Основний вміст */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Заголовок розділу */
+#courses h2 {
+    color: #1f4e79;
+    text-align: center;
+}
+
+/* Контейнер карток */
+.courses {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Окрема картка курсу */
+.course-card {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #1f4e79;
+    border-radius: 8px;
+}
+
+    /* Заголовки карток */
+    .course-card h3 {
+        margin-top: 0;
+        color: #1f4e79;
+    }
+
+/* Тривалість навчання */
+.duration {
+    font-weight: bold;
+}
+
+/* Важливе повідомлення */
+.notice {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff3cd;
+    border-left: 6px solid #e0a800;
+}
+
+/* Нижня частина сторінки */
+footer {
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
