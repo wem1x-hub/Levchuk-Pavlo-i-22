@@ -1,0 +1,119 @@
+﻿/* Загальні стилі */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Статичне позиціонування */
+header {
+    position: static;
+    padding: 25px;
+    text-align: center;
+    background-color: #1f4e79;
+    color: white;
+}
+
+/* Меню залишається зверху під час прокручування */
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 15px;
+    background-color: #163a5a;
+    text-align: center;
+}
+
+    .menu a {
+        margin: 0 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+/* Основний вміст */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Заголовок із position: sticky */
+.sticky-title {
+    position: sticky;
+    top: 60px;
+    z-index: 5;
+    padding: 15px;
+    background-color: #d9eaf7;
+}
+
+/* Картки товарів */
+.products {
+    display: flex;
+    gap: 20px;
+}
+
+.product {
+    position: relative;
+    flex: 1;
+    min-height: 180px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #999;
+}
+
+/* Позиціонування знижки всередині картки */
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #d62828;
+    color: white;
+}
+
+/* Демонстрація relative */
+.relative-box {
+    position: relative;
+    min-height: 180px;
+    padding: 20px;
+    background-color: #d9eaf7;
+    border: 2px solid #1f4e79;
+}
+
+/* Демонстрація absolute */
+.absolute-box {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 20px;
+    background-color: #f4a261;
+}
+
+/* Демонстрація static */
+.static-box {
+    position: static;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+/* Фіксована кнопка */
+.help {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 20;
+    padding: 15px 25px;
+    border: none;
+    background-color: #2a9d8f;
+    color: white;
+    cursor: pointer;
+}
+
+/* Нижня частина сторінки */
+.contacts {
+    margin-top: 40px;
+    padding: 30px;
+    background-color: white;
+}
